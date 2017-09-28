@@ -20,7 +20,7 @@ class Dog
   private
 
   def adding_name
-    
+
   end
 
 end
