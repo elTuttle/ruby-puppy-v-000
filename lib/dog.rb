@@ -13,7 +13,6 @@ class Dog
   end
 
   def self.all
-    @@all.each
     puts @@all
   end
 
