@@ -1,13 +1,11 @@
 class Dog
   @@all = []
-  @@all_with_id = []
 
   attr_accessor :name
 
   def initialize(name)
     @name = name
-    @@all_with_id << self
-    adding_name
+    @@all << name
   end
 
   def self.all
@@ -22,9 +20,7 @@ class Dog
   private
 
   def adding_name
-    @@all_with_id.each do |names|
-      @@all << names.name
-    end
+    
   end
 
 end
