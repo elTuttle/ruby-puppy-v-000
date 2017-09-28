@@ -5,7 +5,8 @@ class Dog
   attr_accessor :name
 
   def initialize(name)
-    @name = name    
+    @name = name
+    @@all_with_id << self
   end
 
   def self.all
@@ -20,7 +21,9 @@ class Dog
   private
 
   def adding_name
-    
+    @@all_with_id.each do |names|
+      @@all << names.name
+    end
   end
 
 end
