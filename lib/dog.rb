@@ -7,6 +7,7 @@ class Dog
   def initialize(name)
     @name = name
     @@all_with_id << self
+    adding_name
   end
 
   def self.all
